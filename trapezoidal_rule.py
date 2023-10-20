@@ -21,7 +21,7 @@ for i in tms_datas:
 A = x[0]
 B = x[-1]
 # 델타 x
-n = 50
+n = 500
 delta_x = (B-A)//n
 
 # 보간
@@ -31,11 +31,9 @@ y = interpolation(x) # 보간한 y
 
 #사다리꼴 공식 계산
 area = 0
-
 for i in range(n):
-    trapezoidal = delta_x*((y[int(i*delta_x)]+y[int((i+1)*delta_x)])/2)
+    trapezoidal = delta_x*((y[i*delta_x]+y[(i+1)*delta_x])/2)
     area += trapezoidal
-
 
 # 터미널 출력
 print("Area : {:.2f}(s)".format(area/1000))
