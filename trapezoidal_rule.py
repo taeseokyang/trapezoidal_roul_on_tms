@@ -15,7 +15,7 @@ start_time = int(tms_datas[0].split()[0])
 for i in tms_datas:
     time_and_newton = i.split()
     y.append(float(time_and_newton[1]))
-    x.append(int(time_and_newton[0])-start_time) # 0점 맞추기
+    x.append(int(time_and_newton[0])-start_time) # 영점 맞추기
 
 # 구간
 A = x[0]
