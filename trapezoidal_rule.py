@@ -1,8 +1,8 @@
 import matplotlib.pyplot as plt
 from scipy.interpolate import interp1d
 
-y = []
-x = []
+y = [] # newton
+x = [] # time
 start = 659 # 연소 시작 인덱스
 end = 714 # 연소 종료 인덱스
 # 데이터 읽기
