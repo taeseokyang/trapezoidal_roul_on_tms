@@ -1,8 +1,8 @@
 import matplotlib.pyplot as plt
 from scipy.interpolate import interp1d
 
-y = []
-x = []
+y = [] # newton
+x = [] # time
 start = 659 # 연소 시작 인덱스
 end = 714 # 연소 종료 인덱스
 # 데이터 읽기
@@ -21,7 +21,7 @@ for i in tms_datas:
 A = x[0]
 B = x[-1]
 # 델타 x
-n = 500
+n = 20
 delta_x = (B-A)//n
 
 # 보간
